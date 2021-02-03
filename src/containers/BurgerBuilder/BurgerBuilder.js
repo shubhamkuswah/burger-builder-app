@@ -60,6 +60,7 @@ class BurgerBuilder extends Component{
                 removeIngredient={this.removeIngredient}
                 disabled={disabledInfo}
                 price={this.state.totalPrice}
+                purchasable={this.state.totalPrice > 4 ? false : true}
                 />
             </Aux>
         );
