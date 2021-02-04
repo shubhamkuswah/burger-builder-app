@@ -7,7 +7,6 @@ const burger = (props)=> {
     for (let key in props.ingredients)    
         for (let i = 0; i < props.ingredients[key]; i++)      
             allIngred.push(<BurgerIngredient key={key + i} type={key} />) 
-    console.log(allIngred,'allIngred');
     if(allIngred.length === 0) {
         allIngred = <p>Please add ingredients to make your burger!</p>
     }
